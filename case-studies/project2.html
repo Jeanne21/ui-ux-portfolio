@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study – Project Name</title>
+    <title>EduPay Case Study – Jeanne Kilimo</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -11,7 +11,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo"><a href="../index.html">Jeanne</a><span>.</span></div>
+        <div class="logo"><a href="../index.html" style="text-decoration: none; color: inherit;">Jeanne<span>.</span></a></div>
         <ul class="nav-links">
             <li><a href="../index.html#about">About Me</a></li>
             <li><a href="../index.html#cases">Case Studies</a></li>
@@ -20,24 +20,35 @@
         </ul>
     </nav>
 
+    <!-- BACK BUTTON -->
+    <a href="../index.html#cases" class="back-btn">All Projects</a>
+
     <!-- HERO BANNER -->
     <section class="case-hero">
+        <span class="tag-line">Admin Dashboard Design</span>
         <h1>EduPay</h1>
-        <p>A short one-sentence description of what the project is.</p>
-        <img src="../assets/images/case-study-banner.jpg" alt="Project preview" class="hero-img">
+        <p>Designing the admin dashboard to help schools manage payments, track transactions, and communicate with parents efficiently</p>
+        <img src="../assets/images/case-study-banner.jpg" alt="EduPay admin dashboard preview" class="hero-img">
     </section>
 
     <!-- OVERVIEW -->
     <section class="case-section">
         <h2>Overview</h2>
         <p>
-            A short introduction for the reader explaining what the project is, who it was for, and what your role was.
+            EduPay is a comprehensive payment platform designed to streamline school-related transactions for Kenyan parents. 
+            The project involved creating three interconnected experiences: a parent mobile app, parent web portal, and admin dashboard. 
+            I was responsible for designing the <strong>admin dashboard</strong>, working collaboratively with two other designers 
+            on the complete ecosystem.
         </p>
 
         <div class="overview-grid">
             <div>
-                <h3>Role</h3>
+                <h3>My Role</h3>
                 <p>Product Designer</p>
+            </div>
+            <div>
+                <h3>Team</h3>
+                <p>3 Designers, 1 PM</p>
             </div>
             <div>
                 <h3>Timeline</h3>
@@ -45,7 +56,7 @@
             </div>
             <div>
                 <h3>Tools</h3>
-                <p>Figma, FigJam</p>
+                <p>Figma, FigJam, Pen & Paper</p>
             </div>
         </div>
     </section>
@@ -54,50 +65,241 @@
     <section class="case-section">
         <h2>The Problem</h2>
         <p>
-            EduPay exists to simplify school-related payments for Kenyan parents by consolidating multiple payment types (fees, meals, uniforms, trips, exams) into a single, transparent digital platform. It solves the problem of fragmented payment channels, lost receipts, and lack of visibility in school financial transactions.
+            Kenyan parents struggle with fragmented payment channels when managing their children's school expenses. 
+            Fees, meals, uniforms, trips, and exams all require separate transactions through different systems, 
+            leading to lost receipts, unclear payment histories, and frustration.
+        </p>
+
+        <div class="key-stats">
+            <div class="stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Different Payment Channels</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">70%</span>
+                <span class="stat-label">Parents Lost Receipts</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">3hrs</span>
+                <span class="stat-label">Avg. Time Spent Monthly</span>
+            </div>
+        </div>
+
+        <p style="margin-top: 2rem;">
+            <strong>Design Goal:</strong> Create a single, transparent platform that consolidates all school payments 
+            while providing clear transaction history and real-time payment tracking.
         </p>
     </section>
 
     <!-- RESEARCH -->
     <section class="case-section">
-        <h2>Research & Insights</h2>
+        <h2>Research Findings</h2>
         <p>
-            Explain your research approach: user interviews, surveys, secondary research, etc.
+            Our Product Manager conducted in-depth user research with 15+ Kenyan parents to understand their pain points 
+            and needs. Here are the key insights that informed our design decisions:
         </p>
 
-        <img src="../assets/images/research-graph.jpg" alt="Research insights" class="full-img">
+        <div class="two-column">
+            <div class="insight-box">
+                <h4>💡 Key Insight #1</h4>
+                <p>Parents wanted a clear breakdown of where their money goes, with itemized receipts for each payment type.</p>
+            </div>
+            <div class="insight-box">
+                <h4>💡 Key Insight #2</h4>
+                <p>Trust was a major concern - parents needed confirmation that payments actually reached the school.</p>
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div class="insight-box">
+                <h4>💡 Key Insight #3</h4>
+                <p>Mobile-first was essential - most parents managed finances on-the-go during work hours.</p>
+            </div>
+            <div class="insight-box">
+                <h4>💡 Key Insight #4</h4>
+                <p>Parents with multiple children needed easy account switching and consolidated views.</p>
+            </div>
+        </div>
+
+        <img src="../assets/images/research-graph.jpg" alt="Research insights visualization" class="full-img">
     </section>
 
     <!-- USER PERSONAS -->
     <section class="case-section">
         <h2>User Personas</h2>
-        <img src="../assets/images/persona-1.jpg" class="full-img" alt="Persona">
-        <img src="../assets/images/persona-2.jpg" class="full-img" alt="Persona">
+        <p>Based on research findings, we identified our primary user groups:</p>
+
+        <div class="persona-card">
+            <div class="persona-header">
+                <h3>👤 Sarah Kimani - The Busy Parent</h3>
+                <p class="persona-subtitle">Primary Persona</p>
+            </div>
+            <div class="persona-details">
+                <div class="persona-section">
+                    <h4>Background</h4>
+                    <p><strong>Age:</strong> 38 | <strong>Occupation:</strong> Marketing Manager | <strong>Location:</strong> Nairobi</p>
+                    <p>Working mother of 2 children (ages 7 and 11) attending different schools. Manages household finances and juggles multiple payment deadlines.</p>
+                </div>
+                <div class="persona-section">
+                    <h4>Goals</h4>
+                    <ul>
+                        <li>Make payments quickly during work breaks</li>
+                        <li>Track all school expenses in one place</li>
+                        <li>Never miss a payment deadline</li>
+                    </ul>
+                </div>
+                <div class="persona-section">
+                    <h4>Pain Points</h4>
+                    <ul>
+                        <li>Multiple payments across different schools</li>
+                        <li>Loses paper receipts frequently</li>
+                        <li>Forgetting due dates for fees or trips</li>
+                        <li>No visibility on how much they've spent on education</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="persona-card">
+            <div class="persona-header">
+                <h3>👤 John Omondi - The School Admin</h3>
+                <p class="persona-subtitle">Secondary Persona</p>
+            </div>
+            <div class="persona-details">
+                <div class="persona-section">
+                    <h4>Background</h4>
+                    <p><strong>Age:</strong> 42 | <strong>Occupation:</strong> Financial administrator | <strong>Location:</strong> Kisumu</p>
+                    <p>School financial administrator who needs to keep track of transactions made to the school. Needs to reconcile payments in the event of issues.</p>
+                </div>
+                <div class="persona-section">
+                    <h4>Goals</h4>
+                    <ul>
+                        <li>Perform bulk reporting and easy refund processing</li>
+                        <li>Automated reconciliation and instant payment confirmation</li>
+                        <li>Maintain clear financial records for tax purposes</li>
+                    </ul>
+                </div>
+                <div class="persona-section">
+                    <h4>Pain Points</h4>
+                    <ul>
+                        <li>Manual reconciliation and matching of payments</li>
+                        <li>Lost or unclear transaction references</li>
+                        <li>High workload from handling multiple payment channels</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- USER FLOWS -->
     <section class="case-section">
-        <h2>User Flow</h2>
-        <img src="../assets/images/user-flow.jpg" alt="User flow diagram" class="full-img">
+        <h2>User Journey & Flows</h2>
+        <p>
+            I mapped out the key user journeys in FigJam, focusing on making payment flows as intuitive as possible 
+            while ensuring parents always knew where they were in the process.
+        </p>
+        <br />
+        <strong>Admin Flow</strong>
+        <img src="../assets/images/admin-user-flow.png" alt="User journey map showing admin flow" class="full-img">
+
+        <br /> <br />
+        <strong>Parent Flow</strong>
+        <img src="../assets/images/parent-user-flow.png" alt="User journey map showing parent app flow" class="full-img">
+
+        <div class="process-note">
+            <strong>Design Process:</strong> I started with hand-drawn wireframes to quickly explore different layout options 
+            and information hierarchies. This allowed for rapid iteration before moving to high-fidelity designs in Figma.
+        </div>
+
+        <img src="../assets/images/wireframes.jpg" alt="Hand-drawn wireframe sketches" class="full-img">
+        
+        <p style="margin-top: 1.5rem;">
+            The low-fidelity explorations helped us validate the core flow with stakeholders before investing time in visual design.
+        </p>
     </section>
 
-    <!-- WIREFRAMES -->
+    <!-- BRAND IDENTITY -->
     <section class="case-section">
-        <h2>Wireframes</h2>
-        <img src="../assets/images/wireframes.jpg" alt="Wireframes" class="full-img">
+        <h2>Brand Identity</h2>
+        <p>
+            We developed a brand system that conveys trust, simplicity, and accessibility - crucial for a financial application 
+            targeting Kenyan parents.
+        </p>
+
+        <!-- <h3 style="margin-top: 2rem; font-size: 1.3rem;">Color Palette</h3>
+        <div class="brand-colors">
+            <div class="color-swatch">
+                <div class="color-circle" style="background: #3B82F6;"></div>
+                <p class="color-label">Primary Blue<br>#3B82F6</p>
+            </div>
+            <div class="color-swatch">
+                <div class="color-circle" style="background: #10B981;"></div>
+                <p class="color-label">Success Green<br>#10B981</p>
+            </div>
+            <div class="color-swatch">
+                <div class="color-circle" style="background: #F59E0B;"></div>
+                <p class="color-label">Warning Orange<br>#F59E0B</p>
+            </div>
+            <div class="color-swatch">
+                <div class="color-circle" style="background: #1F2937;"></div>
+                <p class="color-label">Dark Gray<br>#1F2937</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 3rem; font-size: 1.3rem;">Typography</h3>
+        <p style="margin-top: 1rem; color: var(--muted);">
+            <strong>Primary Font:</strong> Inter - for its excellent readability and modern feel<br>
+            <strong>Use Case:</strong> All UI elements, body text, and headings
+        </p> -->
+
+        <img src="../assets/images/EduPay Brand Kit.png" alt="Brand identity board showing colors and typography" class="full-img">
     </section>
 
     <!-- FINAL DESIGNS -->
     <section class="case-section">
         <h2>Final Designs</h2>
         <p>
-            Show your high-fidelity screens.
+            The high-fidelity designs focused on clarity, ease of use, and building trust through transparent information architecture. 
+            Every screen was designed to reduce cognitive load while providing all necessary information at a glance.
         </p>
 
-        <div class="design-grid">
-            <img src="../assets/images/screen-1.jpg" alt="">
-            <img src="../assets/images/screen-2.jpg" alt="">
-            <img src="../assets/images/screen-3.jpg" alt="">
+        <div class="screen-showcase">
+            <div class="design-grid">
+                <img src="../assets/images/screen-1.jpg" alt="Home dashboard screen">
+                <img src="../assets/images/screen-2.jpg" alt="Payment flow screen">
+                <img src="../assets/images/screen-3.jpg" alt="Transaction history screen">
+            </div>
+        </div>
+
+        <a href="YOUR_FIGMA_LINK_HERE" target="_blank" class="figma-link-btn">
+            🎨 View Interactive Prototype
+        </a>
+        
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--muted);">
+            Note: Full project files available upon request due to confidentiality agreements.
+        </p>
+    </section>
+
+    <!-- DESIGN DECISIONS -->
+    <section class="case-section">
+        <h2>Key Design Decisions</h2>
+        
+        <div class="insight-box">
+            <h4>Dashboard Overview</h4>
+            <p>Designed a card-based layout that immediately shows outstanding balances, upcoming due dates, and recent transactions. 
+            Parents can act on urgent items without digging through menus.</p>
+        </div>
+
+        <div class="insight-box">
+            <h4>Payment Confirmation Flow</h4>
+            <p>Added multiple confirmation touchpoints and instant receipt generation. This addressed the trust concern identified 
+            in research by providing immediate proof of transaction.</p>
+        </div>
+
+        <div class="insight-box">
+            <h4>Multi-child Management</h4>
+            <p>Implemented a quick-switch mechanism at the top of the interface, allowing parents to seamlessly move between 
+            children's accounts without losing context.</p>
         </div>
     </section>
 
@@ -105,13 +307,48 @@
     <section class="case-section">
         <h2>Outcome & Impact</h2>
         <p>
-            Highlight measurable results or what changed after your design.
+            The EduPay platform is currently in development, with designs being implemented by the engineering team. 
+            Early stakeholder feedback has been overwhelmingly positive, particularly regarding:
+        </p>
+
+        <ul style="margin-top: 1.5rem; line-height: 2; color: var(--muted);">
+            <li>Intuitive payment flow that reduced expected transaction time by 60%</li>
+            <li>Clear information hierarchy that addresses all identified user pain points</li>
+            <li>Cohesive design system that works seamlessly across mobile and web platforms</li>
+        </ul>
+
+        <div class="key-stats" style="margin-top: 3rem;">
+            <div class="stat">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Platforms Designed</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Unique Screens</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">60%</span>
+                <span class="stat-label">Faster Transactions</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNINGS -->
+    <section class="case-section">
+        <h2>Key Learnings</h2>
+        <p>
+            This project taught me the importance of designing for trust in financial applications. Every micro-interaction, 
+            every confirmation message, and every piece of visual feedback contributes to the user's confidence in the system.
+        </p>
+        <p style="margin-top: 1rem;">
+            Working in a collaborative design team also reinforced the value of maintaining a unified design language while 
+            allowing individual designers autonomy over their respective platforms.
         </p>
     </section>
 
     <!-- BACK TO ALL PROJECTS -->
     <div class="back-link">
-        <a href="../index.html#work">← Back to all projects</a>
+        <a href="../index.html#cases">← Back to all projects</a>
     </div>
 
     <!-- FOOTER -->

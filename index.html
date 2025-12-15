@@ -56,7 +56,7 @@
         <div class="cards">
 
             <a href="case-studies/project1.html" class="case-card">
-                <img src="assets/images/project1-thumb.jpg" alt="Project Thumbnail">
+                <img src="assets/images/thumbnail.png" alt="Project Thumbnail">
                 <h3>EduPay</h3>
                 <p>EduPay exists to simplify school-related payments for Kenyan parents by consolidating multiple payment types (fees, meals, uniforms, trips, exams) into a single, transparent digital platform.</p>
             </a>
@@ -122,13 +122,38 @@
             </a>
         </div>
 
-        <!-- OPTIONAL contact form -->
-        <form class="contact-form">
-            <input type="text" placeholder="Your name" required>
-            <input type="email" placeholder="Your email" required>
-            <textarea placeholder="Your message..." required></textarea>
-            <button type="submit" class="primary-btn">Send</button>
-        </form>
+        <form 
+            action="https://formspree.io/f/xldqkdeq" 
+            method="POST"
+            class="contact-form"
+            >
+                <input 
+                    type="text" 
+                    name="name" 
+                    placeholder="Your name" 
+                    required
+                >
+
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Your email" 
+                    required
+                >
+
+                <textarea 
+                    name="message" 
+                    placeholder="Your message..." 
+                    required
+                ></textarea>
+
+                <!-- Optional but recommended -->
+                <input type="hidden" name="_subject" value="New portfolio message">
+
+                <button type="submit" class="primary-btn">
+                    Send
+                </button>
+            </form>
     </section>
 
     <!-- FOOTER -->
