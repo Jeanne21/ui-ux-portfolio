@@ -1,166 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI/UX Portfolio – Jeanne Kilimo</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI/UX Portfolio — Jeanne Kilimo</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">Jeanne<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#cases">Case Studies</a></li>
-            <li><a href="#process">Process</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">Jeanne K<span>.</span></div>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#cases">Case Studies</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- HERO SECTION -->
-    <!-- <section id="hero" class="hero">
-        <div class="hero-content">
-            
-            <p>A UI/UX Designer passionate about creating meaningful, human-centered digital experiences.</p>
-            
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="about-content">
+      <img src="assets/images/profile.jpg" class="profile-img reveal-left" alt="Jeanne Kilimo profile photo" />
+
+      <div class="reveal-right">
+        <h1>Hello, I'm <span>Jeanne Kilimo</span></h1>
+        <p>
+          I'm a UI/UX Designer with a passion for simple, beautiful, and intuitive digital products.
+          I focus on human-centered design, accessibility, and solving real problems.
+        </p>
+        <p>
+          I also build production-ready React applications, which gives me a unique perspective on the design-development handoff — helping me create designs that are both visually considered and technically feasible.
+        </p>
+        <div class="about-actions">
+          <a href="https://jeanne21.github.io/" class="primary-btn">View Dev Portfolio ↗</a>
+          <!-- <a href="assets/YourCV.pdf" class="secondary-btn" download>Download CV</a> -->
         </div>
-    </section> -->
+      </div>
+    </div>
+  </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about section">
-
-        <div class="about-content">
-            <img src="assets/images/profile.jpg" class="profile-img" alt="Profile photo">
-
-            <div>
-                <h1>Hello, I’m <span>Jeanne Kilimo</span></h1>
-                <p>
-                    I’m a UI/UX Designer with a passion for simple, beautiful, and intuitive digital products.
-                    I focus on human-centered design, accessibility, and solving real problems.
-                </p>
-                <br />
-                <br />
-                <a href="assets/YourCV.pdf" class="secondary-btn" download>Download My CV</a>
-                <a href="#cases" class="primary-btn">View My Work</a>
-            </div>
-        </div>
+  <!-- CASE STUDIES -->
+  <div class="cases-wrap" style="background: var(--lavender-pale);">
+    <section id="cases" class="cases">
+      <h2 class="section-title reveal-up">Case Studies</h2>
+      <div class="cards">
+        <a href="case-studies/project1.html" class="case-card reveal-up" style="--i:0">
+          <img src="assets/images/thumbnail.png" alt="EduPay project thumbnail" />
+          <h3>EduPay</h3>
+          <p>Consolidating school-related payments for Kenyan parents — fees, meals, uniforms, trips, and exams — into a single, transparent digital platform.</p>
+        </a>
+        <!-- Add more case cards here as your work grows -->
+      </div>
     </section>
+  </div>
 
-    <!-- CASE STUDY SECTION -->
-    <section id="cases" class="cases section">
-        <h2 class="section-title">Case Studies</h2>
+  <!-- PROCESS -->
+  <section id="process" class="process">
+    <h2 class="section-title reveal-up">My Design Process</h2>
+    <div class="process-steps">
+      <div class="step reveal-up" style="--i:0">
+        <h3>1. Research</h3>
+        <p>User interviews, surveys, competitive analysis, defining the problem space.</p>
+      </div>
+      <div class="step reveal-up" style="--i:1">
+        <h3>2. Wireframing</h3>
+        <p>Sketching, low-fidelity wireframes, user flows and information architecture.</p>
+      </div>
+      <div class="step reveal-up" style="--i:2">
+        <h3>3. Design</h3>
+        <p>High fidelity screens, UI elements, visual direction, interactive prototyping.</p>
+      </div>
+      <div class="step reveal-up" style="--i:3">
+        <h3>4. Testing</h3>
+        <p>User tests, usability feedback, design iterations and refinements.</p>
+      </div>
+    </div>
+  </section>
 
-        <div class="cards">
+  <!-- CONTACT -->
+  <div style="background: var(--lavender-pale);">
+    <section id="contact" class="contact">
+      <div class="contact-header reveal-up">
+        <p class="label">Let's talk</p>
+        <h2 class="section-title" style="text-align:left; margin-bottom:0;">Get in Touch</h2>
+      </div>
 
-            <a href="case-studies/project1.html" class="case-card">
-                <img src="assets/images/thumbnail.png" alt="Project Thumbnail">
-                <h3>EduPay</h3>
-                <p>EduPay exists to simplify school-related payments for Kenyan parents by consolidating multiple payment types (fees, meals, uniforms, trips, exams) into a single, transparent digital platform.</p>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">I'm open to UI/UX design roles, product design collaborations, and interesting conversations. Drop me a message — I'd love to connect.</p>
+          <div class="contact-details">
+            <a href="mailto:jeannewanjiruk@gmail.com" class="contact-row">
+              <span class="contact-icon">✉</span>
+              <span>jeannewanjiruk@gmail.com</span>
             </a>
-
-            <!-- <a href="case-studies/project2.html" class="case-card">
-                <img src="assets/images/project2-thumb.jpg" alt="Project Thumbnail">
-                <h3>Project Name 2</h3>
-                <p>Short explanation of the project and your role.</p>
-            </a>
-
-            <a href="case-studies/project3.html" class="case-card">
-                <img src="assets/images/project3-thumb.jpg" alt="Project Thumbnail">
-                <h3>Project Name 3</h3>
-                <p>Short explanation of the project and your role.</p>
-            </a> -->
-
-        </div>
-    </section>
-
-    <!-- PROCESS SECTION -->
-    <section id="process" class="process section">
-        <h2 class="section-title">My Design Process</h2>
-        <div class="process-steps">
-
-            <div class="step">
-                <h3>1. Research</h3>
-                <p>User interviews, surveys, competitive analysis, defining the problem.</p>
+            <div class="contact-row">
+              <span class="contact-icon">📍</span>
+              <span>Nairobi, Kenya</span>
             </div>
-
-            <div class="step">
-                <h3>2. Wireframing</h3>
-                <p>Sketching, low-fidelity wireframes, user flows.</p>
-            </div>
-
-            <div class="step">
-                <h3>3. Design</h3>
-                <p>High fidelity screens, UI elements, visual direction, prototyping.</p>
-            </div>
-
-            <div class="step">
-                <h3>4. Testing</h3>
-                <p>User tests, improvements, iterations.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact section">
-        <h2 class="section-title">Let’s Work Together</h2>
-
-        <div class="contact-options">
-            <a href="mailto:jeannewanjiruk@gmail.com">
-                <img src="assets/icons/mail.svg"> Email
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/jeannekilimo" target="_blank" class="social-btn">
+              <img src="assets/icons/linkedin.svg" alt="LinkedIn" width="18" height="18" /> LinkedIn
             </a>
-
-            <a href="https://www.linkedin.com/in/jeannekilimo" target="_blank">
-                <img src="assets/icons/linkedin.svg"> LinkedIn
+            <a href="https://github.com/Jeanne21" target="_blank" class="social-btn">
+              <img src="assets/icons/github.svg" alt="GitHub" width="18" height="18" /> GitHub
             </a>
-
-            <a href="https://github.com/Jeanne21" target="_blank">
-                <img src="assets/icons/github.svg"> GitHub
-            </a>
+          </div>
         </div>
 
-        <form 
-            action="https://formspree.io/f/xldqkdeq" 
-            method="POST"
-            class="contact-form"
-            >
-                <input 
-                    type="text" 
-                    name="name" 
-                    placeholder="Your name" 
-                    required
-                >
+        <form
+          action="https://formspree.io/f/xldqkdeq"
+          method="POST"
+          class="contact-form reveal-right"
+          id="contact-form"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="New design portfolio message" />
+          <div class="form-footer">
+            <button type="submit" class="primary-btn" id="submit-btn">Send Message</button>
+            <p class="form-status" id="form-status"></p>
+          </div>
+        </form>
 
-                <input 
-                    type="email" 
-                    name="email" 
-                    placeholder="Your email" 
-                    required
-                >
-
-                <textarea 
-                    name="message" 
-                    placeholder="Your message..." 
-                    required
-                ></textarea>
-
-                <!-- Optional but recommended -->
-                <input type="hidden" name="_subject" value="New portfolio message">
-
-                <button type="submit" class="primary-btn">
-                    Send
-                </button>
-            </form>
+      </div>
     </section>
+  </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2025 Jeanne Kilimo. Designed & Built with ♥</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="logo" style="font-size:1.2rem;">Jeanne K<span>.</span></span>
+      <p>© 2026 Jeanne Kilimo. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/jeannekilimo" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Jeanne21" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
