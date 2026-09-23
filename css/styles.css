@@ -1045,13 +1045,61 @@ a.contact-row:hover { color: var(--lavender); }
 /* ============================================================
    SERVICE BLUEPRINT
    ============================================================ */
-.blueprint-container { ... }
-.blueprint-img { ... }
-.blueprint-link-btn { ... }
-.blueprint-link-btn:hover { ... }
-.blueprint-callout { ... }
-.blueprint-callout h4 { ... }
-.blueprint-callout p { ... }
+.blueprint-container {
+  position: relative;
+  margin-top: 2rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+ 
+.blueprint-img { margin-top: 0; display: block; }
+ 
+.blueprint-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--lavender-light);
+  color: var(--lavender);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+  transition: all var(--transition);
+}
+ 
+.blueprint-link-btn:hover {
+  background: var(--lavender-pale);
+  border-color: var(--lavender);
+  transform: translateY(-2px);
+}
+ 
+.blueprint-callout {
+  background: var(--lavender-pale);
+  border-left: 3px solid var(--lavender);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1.5rem 2rem;
+  margin-top: 1.5rem;
+}
+ 
+.blueprint-callout h4 {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--lavender);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+ 
+.blueprint-callout p {
+  color: var(--gray);
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
 
 /* ============================================================
    RESPONSIVE
