@@ -317,6 +317,7 @@ p { color: var(--gray-dark); }
   width: 100%;
   height: 260px;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.6s ease;
 }
 
@@ -1040,6 +1041,17 @@ a.contact-row:hover { color: var(--lavender); }
 
 .step.reveal-up      { transition-delay: calc(var(--i,0) * 0.08s); }
 .case-card.reveal-up { transition-delay: calc(var(--i,0) * 0.1s); }
+
+/* ============================================================
+   SERVICE BLUEPRINT
+   ============================================================ */
+.blueprint-container { ... }
+.blueprint-img { ... }
+.blueprint-link-btn { ... }
+.blueprint-link-btn:hover { ... }
+.blueprint-callout { ... }
+.blueprint-callout h4 { ... }
+.blueprint-callout p { ... }
 
 /* ============================================================
    RESPONSIVE
