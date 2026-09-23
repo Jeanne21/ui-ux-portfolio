@@ -119,22 +119,6 @@
       managing hundreds of transactions across multiple payment types, reconciling accounts, generating reports for accountability,
       and keeping parents informed about payment statuses — all while using disconnected spreadsheets and manual processes.
     </p>
-
-    <div class="key-stats">
-      <div class="stat">
-        <span class="stat-number">10+</span>
-        <span class="stat-label">Hours Weekly on Reconciliation</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">500+</span>
-        <span class="stat-label">Transactions Per Month</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">85%</span>
-        <span class="stat-label">Manual Data Entry</span>
-      </div>
-    </div>
-
     <p style="margin-top: 2rem;">
       <strong>Admin Dashboard Goal:</strong> Create a centralized system for school administrators to efficiently manage student accounts,
       track all payment activities in real-time, generate financial reports, and communicate payment statuses to parents — eliminating manual
@@ -250,27 +234,65 @@
       managing student accounts, and generating reports. The goal was to minimize clicks while maintaining data accuracy.
     </p>
     <img src="../assets/images/admin-user-flow.png" alt="User journey map showing admin flow" class="full-img" />
-
+ 
     <div class="process-note">
       <strong>Design Process:</strong> I started with hand-drawn wireframes to quickly explore different layout options
-      and information hierarchies. This allowed for rapid iteration before moving to high-fidelity designs in Figma.
+      and information hierarchies before moving to high-fidelity designs in Figma.
     </div>
-
-    <img src="../assets/images/Debunking misconceptions.jpg" alt="Hand-drawn wireframe sketches" class="full-img" />
-
-    <p style="margin-top: 1.5rem;">
-      The low-fidelity explorations helped us validate the core flow with stakeholders before investing time in visual design.
-    </p>
+    <img src="../assets/images/wireframes.jpg" alt="Hand-drawn wireframe sketches" class="full-img" />
   </section>
-
+ 
   <!-- BRAND IDENTITY -->
   <section class="case-section">
     <h2>Brand Identity</h2>
-    <p>
-      We developed a brand system that conveys trust, simplicity, and accessibility — crucial for a financial application
-      targeting Kenyan parents.
-    </p>
+    <p>We developed a brand system that conveys trust, simplicity, and accessibility — crucial for a financial application targeting Kenyan schools.</p>
     <img src="../assets/images/EduPay Brand Kit.png" alt="EduPay brand identity board" class="full-img" />
+  </section>
+ 
+  <!-- SERVICE BLUEPRINT -->
+  <section class="case-section">
+    <h2>Service Blueprint</h2>
+    <p>
+      To understand EduPay as an end-to-end service — not just a UI — I mapped the complete payment experience
+      across both the parent-facing frontstage and the admin backstage operations that support it. This blueprint
+      traces the full journey from fee reminder through to issue resolution, showing how the admin dashboard
+      connects directly to the parent's experience at every stage.
+    </p>
+ 
+    <div class="blueprint-container">
+      <img
+        src="../assets/images/EduPay Service Blueprint.png"
+        alt="EduPay service blueprint showing customer actions, thoughts and feelings, frontstage app interactions, line of visibility, backstage admin dashboard operations, and pain points across seven stages"
+        class="full-img blueprint-img"
+      />
+    </div>
+ 
+    <a
+      href="https://canva.link/2elk3mt0oedjkvq"
+      target="_blank"
+      class="blueprint-link-btn"
+    >
+      ↗ View full blueprint
+    </a>
+ 
+    <div class="blueprint-callout">
+      <h4>Key service design insight</h4>
+      <p>
+        The blueprint revealed a critical cross-lane pain point: fee category names configured by the bursar
+        on the admin dashboard directly affect how clearly parents understand what they are paying for on the
+        front end. A naming decision made backstage becomes a confusion point frontstage — something that would
+        not be visible from looking at either interface in isolation.
+      </p>
+    </div>
+ 
+    <div class="blueprint-callout">
+      <h4>Service gap identified</h4>
+      <p>
+        Parents with children at different schools currently need separate accounts, with no unified view
+        across institutions. This is a gap in the service model itself rather than a UI problem — one that
+        would require a platform-level decision to resolve.
+      </p>
+    </div>
   </section>
 
   <!-- FINAL DESIGNS -->
@@ -342,11 +364,7 @@
       Early stakeholder feedback has been overwhelmingly positive, particularly regarding:
     </p>
 
-    <ul style="margin-top: 1.5rem; line-height: 2; color: var(--gray); padding-left: 1.25rem; list-style: disc;">
-      <li>Intuitive payment flow that reduced expected transaction time by 60%</li>
-      <li>Clear information hierarchy that addresses all identified user pain points</li>
-      <li>Cohesive design system that works seamlessly across mobile and web platforms</li>
-    </ul>
+    
 
     <div class="key-stats" style="margin-top: 2.5rem;">
       <div class="stat">
