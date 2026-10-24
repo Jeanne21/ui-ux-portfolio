@@ -684,6 +684,18 @@ a.contact-row:hover { color: var(--lavender); }
   box-shadow: var(--shadow-md);
 }
 
+.case-img {
+  display: block;
+  margin: 0 auto;      /* centers it */
+  width: 100%;
+  max-width: 400px;    /* bump this up or down to taste */
+  height: auto;        /* preserves the aspect ratio */
+}
+
+.case-img--sm {
+  max-width: 360px;
+}
+
 /* Overview grid */
 .overview-grid {
   display: flex;
